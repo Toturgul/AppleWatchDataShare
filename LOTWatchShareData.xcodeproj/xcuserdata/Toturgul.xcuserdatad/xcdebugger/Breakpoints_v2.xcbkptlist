@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LOTWatchShareData WatchKit Extension/InterfaceController.m"
-            timestampString = "440434988.542604"
+            timestampString = "440440803.578047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-configureTableWithData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LOTWatchShareData WatchKit Extension/InterfaceController.m"
-            timestampString = "440434988.542604"
+            timestampString = "440440803.578047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-configureTableWithData:"
             landmarkType = "5">
          </BreakpointContent>

@@ -23,10 +23,8 @@
     self = [super initWithContext:context];
     if (self) {
         NSLog(@"%@ initWithContext", self);
-//        self.usernameArray = @[@"Mike is the coolest dude on the planet",@"Joe thinks he knows more than Amy",@"Amy knows more than everyone but Summer",@"Summer knows Mike is the coolest and thats all"];
-//        [self configureTableWithData:self.usernameArray];
-        
-        self.messagesFromApp = [[NSMutableArray alloc] init];
+
+//        self.messagesFromApp = [[NSMutableArray alloc] init];
         [self configureTableWithData:self.messagesFromApp];
         
         
@@ -43,7 +41,7 @@
     [self configureTableWithData:self.messagesFromApp];
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(myButton) userInfo:nil repeats:YES];
+    //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(myButton) userInfo:nil repeats:YES];
 }
 
 - (void)willActivate {
@@ -67,8 +65,9 @@
         NSString* dataObj = [dataObjects objectAtIndex:i];
         
         [theRow.rowMessage setText:dataObj];
-    
     }
+    
+    
 }
 
 
@@ -84,14 +83,16 @@
     
     
 
-     
+    self.messagesFromApp = [[NSMutableArray alloc] init]; 
     
     NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.vegasshare"];
     [mySharedDefaults synchronize];
     
     NSArray* messagesFromVegas = [mySharedDefaults stringArrayForKey:@"savedUserInput"];
-    [self.messagesFromApp addObject:[messagesFromVegas lastObject]];
     
+        for (NSString *tempString in messagesFromVegas) {
+        [self.messagesFromApp insertObject:tempString atIndex:0];
+    }
     
     
     //I think this might refresh the page
