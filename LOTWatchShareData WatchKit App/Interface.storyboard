@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="131" alignment="left" text="Label" id="syO-F0-cmL"/>
+                        <button width="1" alignment="left" title="Button" id="AZD-5h-ZUy">
+                            <connections>
+                                <action selector="myButton" destination="AgC-eL-Hgc" id="VTO-ZG-OzP"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" layout="vertical" id="DpK-Oz-DGC">
+                            <items>
+                                <tableRow identifier="firstRC" id="ZbS-0C-mMn" customClass="MainRowType">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="C5b-cw-z63">
+                                        <items>
+                                            <label width="120" alignment="left" text="Username" id="0cc-2D-Vki"/>
+                                            <label alignment="left" text="Message" numberOfLines="3" id="rQd-PA-Vna">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="0cc-2D-Vki" id="6Fz-1H-q6h"/>
+                                        <outlet property="rowMessage" destination="rQd-PA-Vna" id="TzK-SY-pVm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="syO-F0-cmL" id="ZlX-Ff-UDR"/>
+                        <outlet property="myTable" destination="DpK-Oz-DGC" id="yTC-wo-pOk"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
