@@ -21,6 +21,7 @@
 		D4A3C8221A3FBDA8004862D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A3C8211A3FBDA8004862D0 /* Images.xcassets */; };
 		D4A3C8251A3FBDA8004862D0 /* LOTWatchShareData WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4A3C80D1A3FBDA7004862D0 /* LOTWatchShareData WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D4A3C8301A3FE81E004862D0 /* MainRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3C82F1A3FE81E004862D0 /* MainRowType.m */; };
+		D4F829641A407DB100C903B2 /* SecondInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F829631A407DB100C903B2 /* SecondInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		D4A3C82D1A3FC066004862D0 /* LOTWatchShareData WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "LOTWatchShareData WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		D4A3C82E1A3FE81E004862D0 /* MainRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRowType.h; sourceTree = "<group>"; };
 		D4A3C82F1A3FE81E004862D0 /* MainRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRowType.m; sourceTree = "<group>"; };
+		D4F829621A407DB100C903B2 /* SecondInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondInterfaceController.h; sourceTree = "<group>"; };
+		D4F829631A407DB100C903B2 /* SecondInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				D4A3C80F1A3FBDA8004862D0 /* Supporting Files */,
 				D4A3C82E1A3FE81E004862D0 /* MainRowType.h */,
 				D4A3C82F1A3FE81E004862D0 /* MainRowType.m */,
+				D4F829621A407DB100C903B2 /* SecondInterfaceController.h */,
+				D4F829631A407DB100C903B2 /* SecondInterfaceController.m */,
 			);
 			path = "LOTWatchShareData WatchKit Extension";
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F829641A407DB100C903B2 /* SecondInterfaceController.m in Sources */,
 				D4A3C8131A3FBDA8004862D0 /* InterfaceController.m in Sources */,
 				D4A3C8301A3FE81E004862D0 /* MainRowType.m in Sources */,
 			);
@@ -676,6 +682,7 @@
 				D4A3C8041A3FBA9F004862D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4A3C8051A3FBA9F004862D0 /* Build configuration list for PBXNativeTarget "LOTWatchShareDataTests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +691,7 @@
 				D4A3C8071A3FBA9F004862D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4A3C8261A3FBDA8004862D0 /* Build configuration list for PBXNativeTarget "LOTWatchShareData WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +700,7 @@
 				D4A3C8281A3FBDA8004862D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4A3C8291A3FBDA8004862D0 /* Build configuration list for PBXNativeTarget "LOTWatchShareData WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +709,7 @@
 				D4A3C82B1A3FBDA8004862D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

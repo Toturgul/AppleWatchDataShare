@@ -42,5 +42,12 @@
                 </controller>
             </objects>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="0iJ-bk-Zmj">
+            <objects>
+                <controller id="nAq-Ms-1Sc"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="136"/>
+        </scene>
     </scenes>
 </document>

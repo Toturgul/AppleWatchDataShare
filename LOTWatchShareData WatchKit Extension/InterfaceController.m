@@ -29,6 +29,7 @@
         self.messagesFromApp = [[NSMutableArray alloc] init];
         [self configureTableWithData:self.messagesFromApp];
         
+        
     }
     return self;
 }
@@ -42,6 +43,7 @@
     [self configureTableWithData:self.messagesFromApp];
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(myButton) userInfo:nil repeats:YES];
 }
 
 - (void)willActivate {
@@ -79,21 +81,23 @@
 
 
 - (IBAction)myButton {
-    //I think this might refresh the page
     
     
+
+     
     
     NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.vegasshare"];
     [mySharedDefaults synchronize];
     
-  
-    [self.messagesFromApp addObjectsFromArray:[mySharedDefaults stringArrayForKey:@"savedUserInput"]];
+    NSArray* messagesFromVegas = [mySharedDefaults stringArrayForKey:@"savedUserInput"];
+    [self.messagesFromApp addObject:[messagesFromVegas lastObject]];
     
     
     
+    //I think this might refresh the page
     [self awakeWithContext:nil];
-}
 
+}
 
 
 
